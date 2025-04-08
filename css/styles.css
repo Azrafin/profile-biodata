@@ -303,40 +303,33 @@
   }
 }
 
-/* Untuk smartphone (max 600px) */
+/* Untuk smartphone (max-width: 600px) */
 @media (max-width: 600px) {
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 0.5rem;
+  }
+
+  .nav-links li {
+    margin: 0;
+  }
+
+  .nav-links a {
+    font-size: 0.95rem;
+    padding: 0.25rem 0.5rem;
+  }
+
   .hero-text h1 {
     font-size: 1.75rem;
   }
 
   .hero-text p {
     font-size: 1rem;
-  }
-
-  .biodata h2,
-  .portfolio h2,
-  .contact h2 {
-    font-size: 2rem;
-  }
-
-  /* 🔧 Header tetap mendatar */
-  .nav-links {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.75rem;
-  }
-
-  .nav-links li + li {
-    margin-left: 0;
-  }
-
-  .contact-form {
-    padding: 0 1rem;
-  }
-
-  .project-card img {
-    height: 150px;
   }
 
   .hero-image img {
